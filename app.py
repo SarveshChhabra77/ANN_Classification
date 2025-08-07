@@ -5,7 +5,7 @@ import numpy as np
 import pickle
 
 ## Loading the model
-model=tf.keras.models.load_model('model.h5')
+model = tf.keras.models.load_model("model.h5", compile=False)
 
 # Load the encoders and scaler
 with open('label_encoder_gender.pkl','rb') as file:
